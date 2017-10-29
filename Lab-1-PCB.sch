@@ -1,0 +1,782 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Lab1
+LIBS:Lab-1-PCB-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM317 U2
+U 1 1 59F18CEA
+P 1950 1500
+F 0 "U2" H 1950 1800 60  0000 C CNN
+F 1 "LM317" H 2000 1250 60  0000 L CNN
+F 2 "Footprint:LM317" H 1950 1500 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 1950 1500 60  0001 C CNN
+	1    1950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LT1009 U3
+U 1 1 59F18D31
+P 4600 2050
+F 0 "U3" V 4600 2250 60  0000 C CNN
+F 1 "LT1009" V 4750 1750 60  0000 C CNN
+F 2 "Footprint:LT1009" H 4800 2100 60  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/1009ff.pdf" H 4800 2100 60  0001 C CNN
+	1    4600 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 59F1968E
+P 3950 4750
+F 0 "#PWR01" H 3950 4500 50  0001 C CNN
+F 1 "GND" H 3950 4600 50  0000 C CNN
+F 2 "" H 3950 4750 50  0001 C CNN
+F 3 "" H 3950 4750 50  0001 C CNN
+	1    3950 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 59F19FE3
+P 3950 4550
+F 0 "#PWR02" H 3950 4300 50  0001 C CNN
+F 1 "GND" H 3950 4400 50  0000 C CNN
+F 2 "" H 3950 4550 50  0001 C CNN
+F 3 "" H 3950 4550 50  0001 C CNN
+	1    3950 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 59F1A1AB
+P 4350 3400
+F 0 "C3" V 4450 3450 50  0000 L CNN
+F 1 "0.1u" V 4450 3200 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 4388 3250 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 59F1A8B1
+P 1450 1500
+F 0 "C1" H 1475 1600 50  0000 L CNN
+F 1 "0.1u" H 1475 1400 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 1488 1350 50  0001 C CNN
+F 3 "" H 1450 1500 50  0001 C CNN
+	1    1450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59F1A9BE
+P 1450 1650
+F 0 "#PWR03" H 1450 1400 50  0001 C CNN
+F 1 "GND" H 1450 1500 50  0000 C CNN
+F 2 "" H 1450 1650 50  0001 C CNN
+F 3 "" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59F1AAB1
+P 2450 1650
+F 0 "R1" H 2550 1650 50  0000 C CNN
+F 1 "220" V 2450 1650 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 2380 1650 50  0001 C CNN
+F 3 "" H 2450 1650 50  0001 C CNN
+	1    2450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59F1B2D6
+P 2100 2200
+F 0 "#PWR04" H 2100 1950 50  0001 C CNN
+F 1 "GND" H 2100 2050 50  0000 C CNN
+F 2 "" H 2100 2200 50  0001 C CNN
+F 3 "" H 2100 2200 50  0001 C CNN
+	1    2100 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 59F1B34C
+P 2700 1500
+F 0 "C2" H 2725 1600 50  0000 L CNN
+F 1 "1u" H 2725 1400 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 2738 1350 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59F1B438
+P 2700 1650
+F 0 "#PWR05" H 2700 1400 50  0001 C CNN
+F 1 "GND" H 2700 1500 50  0000 C CNN
+F 2 "" H 2700 1650 50  0001 C CNN
+F 3 "" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59F1BFF7
+P 4200 1650
+F 0 "R3" H 4300 1650 50  0000 C CNN
+F 1 "3.6k" V 4200 1650 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 4130 1650 50  0001 C CNN
+F 3 "" H 4200 1650 50  0001 C CNN
+	1    4200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 59F1C240
+P 4550 1650
+F 0 "#PWR06" H 4550 1400 50  0001 C CNN
+F 1 "GND" H 4550 1500 50  0000 C CNN
+F 2 "" H 4550 1650 50  0001 C CNN
+F 3 "" H 4550 1650 50  0001 C CNN
+	1    4550 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C4
+U 1 1 59F1CAFC
+P 4350 3750
+F 0 "C4" V 4450 3800 50  0000 L CNN
+F 1 "1u" V 4450 3600 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 4388 3600 50  0001 C CNN
+F 3 "" H 4350 3750 50  0001 C CNN
+	1    4350 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 59F1CB32
+P 4500 3400
+F 0 "#PWR07" H 4500 3150 50  0001 C CNN
+F 1 "GND" H 4500 3250 50  0000 C CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59F1CBB4
+P 4500 3750
+F 0 "#PWR08" H 4500 3500 50  0001 C CNN
+F 1 "GND" H 4500 3600 50  0000 C CNN
+F 2 "" H 4500 3750 50  0001 C CNN
+F 3 "" H 4500 3750 50  0001 C CNN
+	1    4500 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 59F1D524
+P 9450 4550
+F 0 "#PWR09" H 9450 4300 50  0001 C CNN
+F 1 "GND" H 9450 4400 50  0000 C CNN
+F 2 "" H 9450 4550 50  0001 C CNN
+F 3 "" H 9450 4550 50  0001 C CNN
+	1    9450 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 59F1EBDF
+P 4500 4450
+F 0 "C5" V 4600 4500 50  0000 L CNN
+F 1 "1u" V 4600 4300 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 4538 4300 50  0001 C CNN
+F 3 "" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59F1F3F1
+P 4800 3450
+F 0 "R4" H 4900 3450 50  0000 C CNN
+F 1 "10k" V 4800 3450 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 4730 3450 50  0001 C CNN
+F 3 "" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 59F1FC54
+P 5050 3450
+F 0 "R5" H 5150 3450 50  0000 C CNN
+F 1 "220" V 5050 3450 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 4980 3450 50  0001 C CNN
+F 3 "" H 5050 3450 50  0001 C CNN
+	1    5050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 59F247DC
+P 5850 3350
+F 0 "R7" H 5950 3350 50  0000 C CNN
+F 1 "8.45k" V 5850 3350 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 5780 3350 50  0001 C CNN
+F 3 "" H 5850 3350 50  0001 C CNN
+	1    5850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 59F24FE1
+P 5850 2850
+F 0 "R8" H 5950 2850 50  0000 C CNN
+F 1 "102k" V 5850 2850 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 5780 2850 50  0001 C CNN
+F 3 "" H 5850 2850 50  0001 C CNN
+	1    5850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 59F25C4D
+P 6100 3100
+F 0 "R9" V 6180 3100 50  0000 C CNN
+F 1 "7.15k" V 6100 3100 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 6030 3100 50  0001 C CNN
+F 3 "" H 6100 3100 50  0001 C CNN
+	1    6100 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C6
+U 1 1 59F261AF
+P 6350 2850
+F 0 "C6" H 6375 2950 50  0000 L CNN
+F 1 "1n" H 6375 2750 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 6388 2700 50  0001 C CNN
+F 3 "" H 6350 2850 50  0001 C CNN
+	1    6350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 59F27492
+P 5550 3100
+F 0 "C7" V 5650 3150 50  0000 L CNN
+F 1 "1n" V 5650 2950 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 5588 2950 50  0001 C CNN
+F 3 "" H 5550 3100 50  0001 C CNN
+	1    5550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R10
+U 1 1 59F300E9
+P 6600 3450
+F 0 "R10" H 6750 3450 50  0000 C CNN
+F 1 "12.1k" V 6600 3450 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 6530 3450 50  0001 C CNN
+F 3 "" H 6600 3450 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 59F325F9
+P 6600 4050
+F 0 "R11" H 6750 4050 50  0000 C CNN
+F 1 "1k" V 6600 4050 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 6530 4050 50  0001 C CNN
+F 3 "" H 6600 4050 50  0001 C CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 59F36085
+P 7500 3400
+F 0 "R14" H 7650 3400 50  0000 C CNN
+F 1 "17.4k" V 7500 3400 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 7430 3400 50  0001 C CNN
+F 3 "" H 7500 3400 50  0001 C CNN
+	1    7500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 59F30C1D
+P 7200 3150
+F 0 "C8" V 7300 3200 50  0000 L CNN
+F 1 "1n" V 7300 3000 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 7238 3000 50  0001 C CNN
+F 3 "" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R13
+U 1 1 59F314E0
+P 7850 3150
+F 0 "R13" V 7930 3150 50  0000 C CNN
+F 1 "4.12k" V 7850 3150 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 7780 3150 50  0001 C CNN
+F 3 "" H 7850 3150 50  0001 C CNN
+	1    7850 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 59F324BD
+P 7500 2850
+F 0 "R12" H 7650 2850 50  0000 C CNN
+F 1 "28k" V 7500 2850 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 7430 2850 50  0001 C CNN
+F 3 "" H 7500 2850 50  0001 C CNN
+	1    7500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 59F331B1
+P 8100 2850
+F 0 "C9" H 8125 2950 50  0000 L CNN
+F 1 "1n" H 8125 2750 50  0000 L CNN
+F 2 "Footprint:C_0805_HandSoldering" H 8138 2700 50  0001 C CNN
+F 3 "" H 8100 2850 50  0001 C CNN
+	1    8100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 59F389BA
+P 9900 3450
+F 0 "R15" H 10050 3450 50  0000 C CNN
+F 1 "1.62k" V 9900 3450 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 9830 3450 50  0001 C CNN
+F 3 "" H 9900 3450 50  0001 C CNN
+	1    9900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 59F394EC
+P 9900 4050
+F 0 "R16" H 10050 4050 50  0000 C CNN
+F 1 "1k" V 9900 4050 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 9830 4050 50  0001 C CNN
+F 3 "" H 9900 4050 50  0001 C CNN
+	1    9900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 59F3D2E2
+P 10250 4250
+F 0 "R17" V 10330 4250 50  0000 C CNN
+F 1 "20k" V 10250 4250 50  0000 C CNN
+F 2 "Footprint:R_0805_HandSoldering" V 10180 4250 50  0001 C CNN
+F 3 "" H 10250 4250 50  0001 C CNN
+	1    10250 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Teensy3.2 U1
+U 1 1 59F4081E
+P 1900 4600
+F 0 "U1" H 1900 6150 60  0000 C CNN
+F 1 "Teensy3.2" H 2400 4500 60  0000 C CNN
+F 2 "Footprint:Teensy3.2" H 1850 4600 60  0001 C CNN
+F 3 "https://www.pjrc.com/teensy/K20P64M72SF1.pdf" H 1850 4600 60  0001 C CNN
+	1    1900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 59F52E2E
+P 1900 4800
+F 0 "#PWR010" H 1900 4550 50  0001 C CNN
+F 1 "GND" H 1900 4650 50  0000 C CNN
+F 2 "" H 1900 4800 50  0001 C CNN
+F 3 "" H 1900 4800 50  0001 C CNN
+	1    1900 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 2050
+NoConn ~ 1250 3200
+NoConn ~ 1250 3300
+NoConn ~ 1250 3400
+NoConn ~ 1250 3500
+NoConn ~ 1250 3600
+NoConn ~ 1250 3700
+NoConn ~ 1250 3800
+NoConn ~ 1250 3900
+NoConn ~ 1250 4000
+NoConn ~ 1250 4100
+NoConn ~ 1250 4500
+NoConn ~ 1700 4800
+NoConn ~ 1800 4800
+NoConn ~ 2000 4800
+NoConn ~ 2100 4800
+NoConn ~ 2550 4400
+NoConn ~ 2550 4300
+NoConn ~ 2550 4200
+NoConn ~ 2550 4100
+NoConn ~ 2550 4000
+NoConn ~ 2550 3900
+NoConn ~ 2550 3800
+NoConn ~ 2550 3700
+NoConn ~ 2550 3600
+NoConn ~ 2550 3500
+NoConn ~ 2550 3400
+NoConn ~ 2550 3300
+NoConn ~ 2550 3200
+NoConn ~ 9450 4650
+NoConn ~ 9450 4750
+NoConn ~ 9450 4850
+$Comp
+L MCP_4921 U4
+U 1 1 59F3428B
+P 3500 4850
+F 0 "U4" H 3500 5400 60  0000 C CNN
+F 1 "MCP_4921" H 3500 4800 60  0000 C CNN
+F 2 "Footprint:MCP_4921" H 3500 4850 60  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21897b.pdf" H 3500 4850 60  0001 C CNN
+	1    3500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL974 U5
+U 1 1 59F35C19
+P 8950 4550
+F 0 "U5" H 8950 5000 60  0000 C CNN
+F 1 "TL974" H 8950 4100 60  0000 C CNN
+F 2 "Footprint:TL974" H 8800 4150 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl974.pdf" H 8800 4150 60  0001 C CNN
+	1    8950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5001TestPoint U6
+U 1 1 59F51B26
+P 10650 4250
+F 0 "U6" H 10650 4350 60  0000 C CNN
+F 1 "Output" H 10650 4150 60  0000 C CNN
+F 2 "Footprint:Test_Point_Keystone_5000-5004_Miniature" H 10650 4250 60  0001 C CNN
+F 3 "http://datasheet.octopart.com/5001-Keystone-datasheet-7268890.pdf" H 10650 4250 60  0001 C CNN
+	1    10650 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 5001TestPoint U0
+U 1 1 59F55E27
+P 1000 1350
+F 0 "U0" H 1000 1450 60  0000 C CNN
+F 1 "Vcc" H 1000 1250 60  0000 C CNN
+F 2 "Footprint:Test_Point_Keystone_5000-5004_Miniature" H 1000 1350 60  0001 C CNN
+F 3 "http://datasheet.octopart.com/5001-Keystone-datasheet-7268890.pdf" H 1000 1350 60  0001 C CNN
+	1    1000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT R6
+U 1 1 59F5AD9F
+P 5550 4250
+F 0 "R6" H 5450 4400 50  0000 C CNN
+F 1 "20k" V 5450 4250 50  0000 C CNN
+F 2 "Footprint:CT-94EW" H 5550 4250 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-94.pdf" H 5550 4250 50  0001 C CNN
+	1    5550 4250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5550 4400
+Connection ~ 9900 4250
+Connection ~ 9900 3750
+Wire Wire Line
+	9750 3750 9900 3750
+Wire Wire Line
+	9750 4350 9750 3750
+Connection ~ 9550 4250
+Wire Wire Line
+	9900 4250 9900 4200
+Wire Wire Line
+	9900 3600 9900 3900
+Connection ~ 8100 2600
+Wire Wire Line
+	9900 2600 9900 3300
+Wire Wire Line
+	9750 4350 9450 4350
+Connection ~ 8100 3150
+Wire Wire Line
+	9650 4450 9450 4450
+Wire Wire Line
+	9650 3150 9650 4450
+Connection ~ 7500 2600
+Wire Wire Line
+	8100 2600 8100 2700
+Wire Wire Line
+	8100 3150 8100 3000
+Wire Wire Line
+	8000 3150 9650 3150
+Connection ~ 6600 2600
+Wire Wire Line
+	7500 2600 7500 2700
+Connection ~ 7500 3150
+Wire Wire Line
+	9450 4250 10100 4250
+Wire Wire Line
+	9550 3650 9550 4250
+Wire Wire Line
+	7350 3150 7700 3150
+Wire Wire Line
+	7500 3000 7500 3250
+Connection ~ 7500 4850
+Wire Wire Line
+	7500 4850 7500 3550
+Connection ~ 6600 4850
+Wire Wire Line
+	6600 4200 6600 4850
+Connection ~ 6600 3750
+Wire Wire Line
+	6600 3600 6600 3900
+Wire Wire Line
+	6850 3750 6600 3750
+Wire Wire Line
+	6850 4750 8450 4750
+Wire Wire Line
+	6850 3750 6850 4750
+Connection ~ 6350 2600
+Wire Wire Line
+	6600 2600 6600 3300
+Connection ~ 5050 2600
+Wire Wire Line
+	5050 2600 5050 3300
+Wire Wire Line
+	6350 4650 8450 4650
+Wire Wire Line
+	6350 3100 6250 3100
+Connection ~ 5850 4250
+Wire Wire Line
+	5850 3500 5850 4250
+Wire Wire Line
+	5300 4850 8450 4850
+Wire Wire Line
+	5300 3100 5300 4850
+Wire Wire Line
+	5400 3100 5300 3100
+Connection ~ 4800 2600
+Wire Wire Line
+	4200 2600 9900 2600
+Connection ~ 6350 3100
+Wire Wire Line
+	6350 3000 6350 4650
+Connection ~ 5850 2600
+Wire Wire Line
+	6350 2600 6350 2700
+Connection ~ 5850 3100
+Wire Wire Line
+	5700 3100 5950 3100
+Wire Wire Line
+	5850 3000 5850 3200
+Wire Wire Line
+	5850 2600 5850 2700
+Wire Wire Line
+	5700 4250 8450 4250
+Wire Wire Line
+	4550 2600 4550 2450
+Wire Wire Line
+	1250 1350 1550 1350
+Connection ~ 1450 1350
+Wire Wire Line
+	2350 1350 8300 1350
+Wire Wire Line
+	2450 1950 2450 1800
+Wire Wire Line
+	2450 1350 2450 1500
+Connection ~ 2450 1350
+Connection ~ 2700 1350
+Wire Wire Line
+	4200 1350 4200 1500
+Connection ~ 4200 1350
+Connection ~ 4200 3400
+Connection ~ 4200 3750
+Connection ~ 4550 2600
+Wire Wire Line
+	4800 2600 4800 3300
+Wire Wire Line
+	4800 3600 4800 4450
+Wire Wire Line
+	5050 3600 5050 4350
+Wire Wire Line
+	5050 4350 8450 4350
+Wire Wire Line
+	4650 4450 8450 4450
+Connection ~ 4800 4450
+Wire Wire Line
+	2850 5000 1150 5000
+Wire Wire Line
+	1150 5000 1150 4400
+Wire Wire Line
+	2650 5100 1050 5100
+Connection ~ 4200 2600
+Wire Wire Line
+	9550 3650 6900 3650
+Wire Wire Line
+	6900 3650 6900 3150
+Wire Wire Line
+	6900 3150 7050 3150
+Wire Wire Line
+	8300 1350 8300 4550
+Wire Wire Line
+	8300 4550 8450 4550
+Wire Wire Line
+	4200 1800 4200 4650
+Wire Wire Line
+	2950 1350 2950 4450
+Connection ~ 2950 1350
+Wire Wire Line
+	4350 4450 3950 4450
+Wire Wire Line
+	4200 4650 3950 4650
+Wire Wire Line
+	3050 4750 2850 4750
+Wire Wire Line
+	2850 4750 2850 5000
+Wire Wire Line
+	3050 4650 2750 4650
+Wire Wire Line
+	2750 4650 2750 4500
+Wire Wire Line
+	2750 4500 2550 4500
+Wire Wire Line
+	3050 4550 2650 4550
+Wire Wire Line
+	2650 4550 2650 5100
+Wire Wire Line
+	2950 4450 3050 4450
+Connection ~ 1950 1950
+Wire Wire Line
+	1950 1850 1950 2050
+Wire Wire Line
+	2450 1950 1950 1950
+$Comp
+L POT R2
+U 1 1 59F59CC2
+P 1950 2200
+F 0 "R2" H 1850 2300 50  0000 C CNN
+F 1 "2K" V 1850 2200 50  0000 C CNN
+F 2 "Footprint:CT-94EW" H 1950 2200 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-94.pdf" H 1950 2200 50  0001 C CNN
+	1    1950 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 2350
+Wire Wire Line
+	5550 4000 5550 4100
+Wire Wire Line
+	5050 4000 5550 4000
+Connection ~ 5050 4000
+$Comp
+L 5001TestPoint U7
+U 1 1 59F5548B
+P 9800 5300
+F 0 "U7" H 9800 5400 60  0000 C CNN
+F 1 "GND" H 9800 5200 60  0000 C CNN
+F 2 "Footprint:Test_Point_Keystone_5000-5004_Miniature" H 9800 5300 60  0001 C CNN
+F 3 "http://datasheet.octopart.com/5001-Keystone-datasheet-7268890.pdf" H 9800 5300 60  0001 C CNN
+	1    9800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 59F559A4
+P 10050 5300
+F 0 "#PWR011" H 10050 5050 50  0001 C CNN
+F 1 "GND" H 10050 5150 50  0000 C CNN
+F 2 "" H 10050 5300 50  0001 C CNN
+F 3 "" H 10050 5300 50  0001 C CNN
+	1    10050 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 5001TestPoint U8
+U 1 1 59F5FFFA
+P 8550 1350
+F 0 "U8" H 8550 1450 60  0000 C CNN
+F 1 "+5V" H 8550 1250 60  0000 C CNN
+F 2 "Footprint:Test_Point_Keystone_5000-5004_Miniature" H 8550 1350 60  0001 C CNN
+F 3 "http://datasheet.octopart.com/5001-Keystone-datasheet-7268890.pdf" H 8550 1350 60  0001 C CNN
+	1    8550 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L 5001TestPoint U9
+U 1 1 59F61479
+P 10150 2600
+F 0 "U9" H 10150 2700 60  0000 C CNN
+F 1 "+2.5V" H 10150 2500 60  0000 C CNN
+F 2 "Footprint:Test_Point_Keystone_5000-5004_Miniature" H 10150 2600 60  0001 C CNN
+F 3 "http://datasheet.octopart.com/5001-Keystone-datasheet-7268890.pdf" H 10150 2600 60  0001 C CNN
+	1    10150 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 4400 1250 4400
+Wire Wire Line
+	1250 4300 1050 4300
+Wire Wire Line
+	1050 4300 1050 5100
+NoConn ~ 1250 4200
+$EndSCHEMATC
